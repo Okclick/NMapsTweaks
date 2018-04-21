@@ -1,4 +1,4 @@
-FileInstall, NMapsTweaks.ahk, NMapsTweaks.ahk
+п»їFileInstall, NMapsTweaks.ahk, NMapsTweaks.ahk
 FileInstall, NMapsTweaks.ini, NMapsTweaks.ini
 FileInstall, ReadMe.txt     , ReadMe.txt, 1
 
@@ -53,7 +53,7 @@ IniRead, DrawDelay     , NMapsTweaks.ini, Other, DrawDelay     , 50
 
 
 
-#IfWinActive Народная карта — редактор Яндекс.Карт
+#IfWinActive РќР°СЂРѕРґРЅР°СЏ РєР°СЂС‚Р° вЂ” СЂРµРґР°РєС‚РѕСЂ РЇРЅРґРµРєСЃ.РљР°СЂС‚
 
 
 
@@ -118,7 +118,7 @@ GetCenterT(x1, y1, x2, y2, x3, y3, ByRef x0, ByRef y0)
 
 
 
-; Стронуть с места узел, удерживаемый левой кнопкой мыши
+; РЎС‚СЂРѕРЅСѓС‚СЊ СЃ РјРµСЃС‚Р° СѓР·РµР», СѓРґРµСЂР¶РёРІР°РµРјС‹Р№ Р»РµРІРѕР№ РєРЅРѕРїРєРѕР№ РјС‹С€Рё
 
 ~LButton & sc039:: ; LMouse + Space
 
@@ -138,7 +138,7 @@ exit
 
 
 
-; Сдвинуть мышь на 1 точку при удерживаемой левой кнопке мыши
+; РЎРґРІРёРЅСѓС‚СЊ РјС‹С€СЊ РЅР° 1 С‚РѕС‡РєСѓ РїСЂРё СѓРґРµСЂР¶РёРІР°РµРјРѕР№ Р»РµРІРѕР№ РєРЅРѕРїРєРµ РјС‹С€Рё
 
 ~LButton & sc148:: ; LMouse + Up
 ~LButton & sc048:: ; LMouse + Num8
@@ -171,7 +171,7 @@ exit
 
 
 
-; Предыдущая строка в списке правок
+; РџСЂРµРґС‹РґСѓС‰Р°СЏ СЃС‚СЂРѕРєР° РІ СЃРїРёСЃРєРµ РїСЂР°РІРѕРє
 !sc148:: ; Alt+Up
 #sc148:: ; Win+Up
 !sc048:: ; Alt+Num8
@@ -222,7 +222,7 @@ exit
 
 
 
-; Следующая строка в списке правок
+; РЎР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂРѕРєР° РІ СЃРїРёСЃРєРµ РїСЂР°РІРѕРє
 !sc150:: ; Alt+Down
 #sc150:: ; Win+Down
 !sc050:: ; Alt+Num2
@@ -275,7 +275,7 @@ exit
 
 
 
-; Перейти в историю объекта
+; РџРµСЂРµР№С‚Рё РІ РёСЃС‚РѕСЂРёСЋ РѕР±СЉРµРєС‚Р°
 !sc14B:: ; Alt+Left
 #sc14B:: ; Win+Left
 !sc04B:: ; Alt+Num4
@@ -351,7 +351,7 @@ exit
 
 
 
-; Принять правку
+; РџСЂРёРЅСЏС‚СЊ РїСЂР°РІРєСѓ
 !sc14D:: ; Alt+Right
 #sc14D:: ; Win+Right
 !sc04D:: ; Alt+Num6
@@ -391,7 +391,7 @@ exit
 
 
 
-; Отложить правку
+; РћС‚Р»РѕР¶РёС‚СЊ РїСЂР°РІРєСѓ
 !sc037:: ; Alt+NumMult
 #sc037:: ; Win+NumMult
 
@@ -427,7 +427,7 @@ exit
 
 
 
-; Открыть консоль модерации
+; РћС‚РєСЂС‹С‚СЊ РєРѕРЅСЃРѕР»СЊ РјРѕРґРµСЂР°С†РёРё
 !sc052:: ; Alt+Num0
 #sc052:: ; Alt+Num0
 
@@ -460,7 +460,7 @@ exit
 
 
 
-; Написать письмо пользователю
+; РќР°РїРёСЃР°С‚СЊ РїРёСЃСЊРјРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ
 !sc032:: ; Alt+M
 #sc032:: ; Win+M
 !sc135:: ; Alt+NumDiv
@@ -509,7 +509,7 @@ exit
 
 
 
-; Дополнительные сочетания клавиш
+; Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ СЃРѕС‡РµС‚Р°РЅРёСЏ РєР»Р°РІРёС€
 
 !sc010:: ; Alt+Q => Ctrl+Shift+H
 #sc010:: ; Win+Q => Ctrl+Shift+H
@@ -519,7 +519,7 @@ exit
 
 
 
-sc029:: ; «`» => «0»
+sc029:: ; В«`В» => В«0В»
 if AlterZeroSlash = 1
 {
   send {sc00B}
@@ -533,7 +533,7 @@ exit
 
 
 
-+sc029:: ; «~» => «/»
++sc029:: ; В«~В» => В«/В»
 if AlterZeroSlash = 1
 {
   send {sc135}
@@ -547,10 +547,10 @@ exit
 
 
 
-!sc014:: ; ALT+T => «ё»
-#sc014:: ; WIN+T => «ё»
-!sc029:: ; ALT+` => «ё»
-#sc029:: ; WIN+` => «ё»
+!sc014:: ; ALT+T => В«С‘В»
+#sc014:: ; WIN+T => В«С‘В»
+!sc029:: ; ALT+` => В«С‘В»
+#sc029:: ; WIN+` => В«С‘В»
 if AlterZeroSlash = 1
 {
   send {sc029}
@@ -564,10 +564,10 @@ exit
 
 
 
-!+sc014:: ; ALT+SHIFT+T => «Ё»
-#+sc014:: ; WIN+SHIFT+T => «Ё»
-!+sc029:: ; ALT+SHIFT+~ => «Ё»
-#+sc029:: ; WIN+SHIFT+~ => «Ё»
+!+sc014:: ; ALT+SHIFT+T => В«РЃВ»
+#+sc014:: ; WIN+SHIFT+T => В«РЃВ»
+!+sc029:: ; ALT+SHIFT+~ => В«РЃВ»
+#+sc029:: ; WIN+SHIFT+~ => В«РЃВ»
 if AlterZeroSlash = 1
 {
   send +{sc029}
@@ -628,17 +628,17 @@ exit
 
 
 
-;Отключать режим прилипания
+;РћС‚РєР»СЋС‡Р°С‚СЊ СЂРµР¶РёРј РїСЂРёР»РёРїР°РЅРёСЏ
 !sc031:: ; Alt+N
 if NoSnapping = 0
 {
   NoSnapping := 1
-  SplashTextOn 200, 20, Режим прилипания, Отключать
+  SplashTextOn 200, 20, Р РµР¶РёРј РїСЂРёР»РёРїР°РЅРёСЏ, РћС‚РєР»СЋС‡Р°С‚СЊ
 }
 else
 {
   NoSnapping := 0
-  SplashTextOn 200, 20, Режим прилипания, Не отключать
+  SplashTextOn 200, 20, Р РµР¶РёРј РїСЂРёР»РёРїР°РЅРёСЏ, РќРµ РѕС‚РєР»СЋС‡Р°С‚СЊ
 }
 sleep, 1500
 SplashTextOff
@@ -650,17 +650,17 @@ return
 
 
 
-;Переключить режим альтернативного набора символов «0» и «/» вместо «`» и «~»
+;РџРµСЂРµРєР»СЋС‡РёС‚СЊ СЂРµР¶РёРј Р°Р»СЊС‚РµСЂРЅР°С‚РёРІРЅРѕРіРѕ РЅР°Р±РѕСЂР° СЃРёРјРІРѕР»РѕРІ В«0В» Рё В«/В» РІРјРµСЃС‚Рѕ В«`В» Рё В«~В»
 ^sc029:: ; Ctrl+~
 if AlterZeroSlash = 0
 {
   AlterZeroSlash := 1
-  SplashTextOn 200, 20, Альтернативные «0» и «/», ВКЛ
+  SplashTextOn 200, 20, РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Рµ В«0В» Рё В«/В», Р’РљР›
 }
 else
 {
   AlterZeroSlash := 0
-  SplashTextOn 200, 20, Альтернативные «0» и «/», ВЫКЛ
+  SplashTextOn 200, 20, РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Рµ В«0В» Рё В«/В», Р’Р«РљР›
 }
 sleep, 1500
 SplashTextOff
@@ -672,7 +672,7 @@ return
 
 
 
-;Двойной клик для удаления точки
+;Р”РІРѕР№РЅРѕР№ РєР»РёРє РґР»СЏ СѓРґР°Р»РµРЅРёСЏ С‚РѕС‡РєРё
 LCtrl & LButton::
 BlockInput, MouseMove
 click 2
@@ -686,7 +686,7 @@ return
 
 
 
-;Скруглить угол
+;РЎРєСЂСѓРіР»РёС‚СЊ СѓРіРѕР»
 !LButton::
 #LButton::
 if OldRoundCorner = 1
@@ -762,7 +762,7 @@ exit
 
 
 
-;Увеличить масштаб
+;РЈРІРµР»РёС‡РёС‚СЊ РјР°СЃС€С‚Р°Р±
 !sc04E:: ; Alt+NumPlus
 #sc04E:: ; Win+NumPlus
 !sc151:: ; Alt+PgDn
@@ -795,7 +795,7 @@ exit
 
 
 
-;Уменьшить масштаб
+;РЈРјРµРЅСЊС€РёС‚СЊ РјР°СЃС€С‚Р°Р±
 !sc04A:: ; Alt+NumMinus
 #sc04A:: ; Win+NumMinus
 !sc149:: ; Alt+PgUp
@@ -828,7 +828,7 @@ exit
 
 
 
-;Сменить подложку
+;РЎРјРµРЅРёС‚СЊ РїРѕРґР»РѕР¶РєСѓ
 !sc01E:: ; Alt+A
 #sc01E:: ; Win+A
 WinGetPos, winX, winY, winW, winH
@@ -864,7 +864,7 @@ exit
 
 
 
-;Переключить линейку
+;РџРµСЂРµРєР»СЋС‡РёС‚СЊ Р»РёРЅРµР№РєСѓ
 !sc02C:: ; Alt+Z
 #sc02C:: ; Win+Z
 WinGetPos, winX, winY, winW, winH
@@ -898,20 +898,20 @@ exit
 
 
 
-;Найти центр отрезка
+;РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕС‚СЂРµР·РєР°
 !sc02E::  ; Alt+C
 WinGetPos, winX, winY, winW, winH
 
 dontshake := 1
 
-SplashTextOn 310, 40, Найти центр отрезка, Наведите мышь на 1-ю точку`nи нажмите пробел...
-WinMove, Найти центр отрезка, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕС‚СЂРµР·РєР°, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 1-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕС‚СЂРµР·РєР°, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x1, y1
 
 sleep, 250
-SplashTextOn 310, 40, Найти центр отрезка, Наведите мышь на 2-ю точку`nи нажмите пробел...
-WinMove, Найти центр отрезка, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕС‚СЂРµР·РєР°, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 2-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕС‚СЂРµР·РєР°, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x2, y2
 
@@ -931,26 +931,26 @@ return
 
 
 
-;Найти центр окружности
+;РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё
 !+sc02E::  ; Alt+Shift+C
 WinGetPos, winX, winY, winW, winH
 
 dontshake := 1
 
-SplashTextOn 310, 40, Найти центр окружности, Наведите мышь на 1-ю точку`nи нажмите пробел...
-WinMove, Найти центр окружности, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 1-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x1, y1
 
 sleep, 250
-SplashTextOn 310, 40, Найти центр окружности, Наведите мышь на 2-ю точку`nи нажмите пробел...
-WinMove, Найти центр окружности, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 2-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x2, y2
 
 sleep, 250
-SplashTextOn 310, 40, Найти центр окружности, Наведите мышь на 3-ю точку`nи нажмите пробел...
-WinMove, Найти центр окружности, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 3-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, РќР°Р№С‚Рё С†РµРЅС‚СЂ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x3, y3
 
@@ -975,19 +975,19 @@ return
 
 
 
-;Разметка подъездов
+;Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ
 !+sc012::  ; Alt+Shift+E
 
 WinGetPos, winX, winY, winW, winH
 
-SplashTextOn 300, 40, Разметка подъездов, Наведите мышь на 1-й подъезд`nи нажмите пробел...
-WinMove, Разметка подъездов, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 300, 40, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 1-Р№ РїРѕРґСЉРµР·Рґ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x1, y1
 
 sleep, 250
-SplashTextOn 300, 40, Разметка подъездов, Наведите мышь на последний подъезд`nи нажмите пробел...
-WinMove, Разметка подъездов, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 300, 40, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° РїРѕСЃР»РµРґРЅРёР№ РїРѕРґСЉРµР·Рґ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x2, y2
 SplashTextOff
@@ -1000,14 +1000,14 @@ goto StartDrawEntrances
 
 WinGetPos, winX, winY, winW, winH
 
-SplashTextOn 300, 40, Разметка подъездов, Наведите мышь на 1-й край здания`nи нажмите пробел...
-WinMove, Разметка подъездов, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 300, 40, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 1-Р№ РєСЂР°Р№ Р·РґР°РЅРёСЏ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x1, y1
 
 sleep, 250
-SplashTextOn 300, 40, Разметка подъездов, Наведите мышь на 2-й край здания`nи нажмите пробел...
-WinMove, Разметка подъездов, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 300, 40, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 2-Р№ РєСЂР°Р№ Р·РґР°РЅРёСЏ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x2, y2
 SplashTextOff
@@ -1018,7 +1018,7 @@ DrawEntranceMode = 0
 StartDrawEntrances:
 
 sleep, 100
-InputBox, n, Разметка подъездов, Введите количество подъездов (max 100):, , 300, 125, winX + (winW - 380) / 2, winY + (winH - 125) / 2
+InputBox, n, Р Р°Р·РјРµС‚РєР° РїРѕРґСЉРµР·РґРѕРІ, Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРґСЉРµР·РґРѕРІ (max 100):, , 300, 125, winX + (winW - 380) / 2, winY + (winH - 125) / 2
 
 if errorlevel > 0
 {
@@ -1105,7 +1105,7 @@ return
 
 
 
-;Рисование окружности или дуги окружности по трём точкам
+;Р РёСЃРѕРІР°РЅРёРµ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё РёР»Рё РґСѓРіРё РѕРєСЂСѓР¶РЅРѕСЃС‚Рё РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј
 !sc020::  ; Alt+D
 DrawClockwise := 1
 WholeRound := 0
@@ -1134,12 +1134,12 @@ br := "`r`n"
 
 if WholeRound
 {
-  whats := "окружности"
+  whats := "РѕРєСЂСѓР¶РЅРѕСЃС‚Рё"
   ;DebugString := "Mode;round" br br
 }
 else
 {
-  whats := "дуги"
+  whats := "РґСѓРіРё"
   ;DebugString := "Mode;segment" br br
 }
 
@@ -1147,20 +1147,20 @@ else
 
 WinGetPos, winX, winY, winW, winH
 
-SplashTextOn 310, 40, Рисование %whats% по трём точкам, Наведите мышь на 1-ю точку`nи нажмите пробел...
-WinMove, Рисование %whats% по трём точкам, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 1-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x1, y1
 sleep, 250
 
-SplashTextOn 310, 40, Рисование %whats% по трём точкам, Наведите мышь на 2-ю точку`nи нажмите пробел...
-WinMove, Рисование %whats% по трём точкам, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 40, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 2-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...
+WinMove, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 MouseGetPos, x2, y2
 sleep, 250
 
-SplashTextOn 310, 60, Рисование %whats% по трём точкам, Наведите мышь на 3-ю точку`nи нажмите пробел...`n(Чтобы задать число узлов, держите SHIFT)
-WinMove, Рисование %whats% по трём точкам, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+SplashTextOn 310, 60, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, РќР°РІРµРґРёС‚Рµ РјС‹С€СЊ РЅР° 3-СЋ С‚РѕС‡РєСѓ`nРё РЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»...`n(Р§С‚РѕР±С‹ Р·Р°РґР°С‚СЊ С‡РёСЃР»Рѕ СѓР·Р»РѕРІ, РґРµСЂР¶РёС‚Рµ SHIFT)
+WinMove, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 KeyWait, Space, D
 SplashTextOff
 MouseGetPos, x3, y3
@@ -1244,7 +1244,7 @@ if AskForN = D
   n0 := Ceil(r ** 0.66 * gamma / 2.0 / pi)
   While n <= 1
   {
-    InputBox, n, Рисование %whats% по трём точкам, Введите количество узлов: (предлагаемое значение: %n0%), , 380, 125, winX + (winW - 380) / 2, winY + (winH - 125) / 2
+    InputBox, n, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СѓР·Р»РѕРІ: (РїСЂРµРґР»Р°РіР°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ: %n0%), , 380, 125, winX + (winW - 380) / 2, winY + (winH - 125) / 2
 
     if errorlevel > 0
     {
@@ -1275,9 +1275,9 @@ else
 
 ;DebugString := DebugString br "x;delta(x);delta(x)/pi;cos(delta);sin(delta);px;py" br
 
-txt := "Чтобы прервать процесс,`nнажмите пробел."
-SplashTextOn 290, 40, Рисование %whats% по трём точкам, %txt%
-WinMove, Рисование %whats% по трём точкам, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
+txt := "Р§С‚РѕР±С‹ РїСЂРµСЂРІР°С‚СЊ РїСЂРѕС†РµСЃСЃ,`nРЅР°Р¶РјРёС‚Рµ РїСЂРѕР±РµР»."
+SplashTextOn 290, 40, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, %txt%
+WinMove, Р РёСЃРѕРІР°РЅРёРµ %whats% РїРѕ С‚СЂС‘Рј С‚РѕС‡РєР°Рј, , winX + LeftPanelWidth, winY + TopPanelHeight + 10
 BlockInput, MouseMove
 
 dcw := DrawClockwise
