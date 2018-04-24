@@ -352,6 +352,7 @@ exit
 
 
 ; Принять правку
+Insert:: ; Insert
 !sc14D:: ; Alt+Right
 #sc14D:: ; Win+Right
 !sc04D:: ; Alt+Num6
