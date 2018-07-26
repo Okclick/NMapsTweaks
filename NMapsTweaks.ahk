@@ -4,8 +4,7 @@ FileInstall, ReadMe.txt     , ReadMe.txt, 1
 
 
 
-FileInstall, NMaps_Base_A.png            , NMaps_Base_A.png
-FileInstall, NMaps_Base_B.png            , NMaps_Base_B.png
+FileInstall, NMaps_Slices_Btn.png        , NMaps_Slices_Btn.png
 
 FileInstall, NMaps_GoToHistory_Btn.png   , NMaps_GoToHistory_Btn.png
 FileInstall, NMaps_GoToHistory_81_FF.png , NMaps_GoToHistory_81_FF.png
@@ -777,7 +776,7 @@ BlockInput, MouseMove
 sleep 50
 MouseGetPos, x1, y1
 
-ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 200, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_ZoomIn_Btn.png
+ImageSearch x2, y2, LeftPanelWidth - 60, TopPanelHeight, LeftPanelWidth, winH - BottomPanelHeight, *50 NMaps_ZoomIn_Btn.png
 
 if ErrorLevel = 0
 {
@@ -809,7 +808,7 @@ y2 := 0
 BlockInput, MouseMove
 MouseGetPos, x1, y1
 
-ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 200, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_ZoomOut_Btn.png
+ImageSearch x2, y2, LeftPanelWidth - 60, TopPanelHeight, LeftPanelWidth, winH - BottomPanelHeight, *50 NMaps_ZoomOut_Btn.png
 
 if ErrorLevel = 0
 {
@@ -840,17 +839,12 @@ BlockInput, MouseMove
 sleep 50
 MouseGetPos, x1, y1
 
-ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Base_A.png
-
-if ErrorLevel = 1
-{
-  ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Base_B.png
-}
+ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Slices_Btn.png
 
 if ErrorLevel = 0
 {
-  x2 := x2 + 10
-  y2 := y2 + 10
+  x2 := x2 + 20
+  y2 := y2 + 65
   MouseClick, Left, %x2%, %y2%, 1, 0
 }
 
