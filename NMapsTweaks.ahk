@@ -4,15 +4,17 @@ FileInstall, ReadMe.txt     , ReadMe.txt, 1
 
 
 
-FileInstall, NMaps_Slices_Btn.png        , NMaps_Slices_Btn.png
+FileInstall, NMaps_ModerBtn.png          , NMaps_ModerBtn.png
+FileInstall, NMaps_ZoomIn_Btn.png        , NMaps_ZoomIn_Btn.png
+FileInstall, NMaps_ZoomOut_Btn.png       , NMaps_ZoomOut_Btn.png
+FileInstall, NMaps_Ruler_Btn_A.png       , NMaps_Ruler_Btn_A.png
+FileInstall, NMaps_Ruler_Btn_B.png       , NMaps_Ruler_Btn_B.png
+FileInstall, NMaps_Slices_Btn_A.png      , NMaps_Slices_Btn_A.png
+FileInstall, NMaps_Slices_Btn_B.png      , NMaps_Slices_Btn_B.png
 
 FileInstall, NMaps_GoToHistory_Btn.png   , NMaps_GoToHistory_Btn.png
-FileInstall, NMaps_GoToHistory_81_FF.png , NMaps_GoToHistory_81_FF.png
-FileInstall, NMaps_GoToHistory_81_IE.png , NMaps_GoToHistory_81_IE.png
-FileInstall, NMaps_GoToHistory_81_YA.png , NMaps_GoToHistory_81_YA.png
-FileInstall, NMaps_GoToHistory_81_FF2.png, NMaps_GoToHistory_81_FF2.png
-FileInstall, NMaps_GoToHistory_81_IE2.png, NMaps_GoToHistory_81_IE2.png
-FileInstall, NMaps_GoToHistory_81_YA2.png, NMaps_GoToHistory_81_YA2.png
+FileInstall, NMaps_GoToHistory_Link_A.png, NMaps_GoToHistory_Link_A.png
+FileInstall, NMaps_GoToHistory_Link_B.png, NMaps_GoToHistory_Link_B.png
 
 FileInstall, NMaps_ListLine_Bottom1.png  , NMaps_ListLine_Bottom1.png
 FileInstall, NMaps_ListLine_Bottom2.png  , NMaps_ListLine_Bottom2.png
@@ -20,21 +22,15 @@ FileInstall, NMaps_ListLine_Top1.png     , NMaps_ListLine_Top1.png
 FileInstall, NMaps_ListLine_Top2.png     , NMaps_ListLine_Top2.png
 FileInstall, NMaps_ListLine_Top3.png     , NMaps_ListLine_Top3.png
 
-FileInstall, NMaps_ModerBtn.png          , NMaps_ModerBtn.png
-FileInstall, NMaps_Ruler_A.png           , NMaps_Ruler_A.png
-FileInstall, NMaps_Ruler_B.png           , NMaps_Ruler_B.png
-FileInstall, NMaps_ZoomIn_Btn.png        , NMaps_ZoomIn_Btn.png
-FileInstall, NMaps_ZoomOut_Btn.png       , NMaps_ZoomOut_Btn.png
-
 FileInstall, NMaps_RoundCorner.png       , NMaps_RoundCorner.png
 FileInstall, NMaps_RoundCorner_81_YA.png , NMaps_RoundCorner_81_YA.png
 FileInstall, NMaps_RoundCorner_81_IE.png , NMaps_RoundCorner_81_IE.png
 FileInstall, NMaps_RoundCorner_81_FF.png , NMaps_RoundCorner_81_FF.png
 
-FileInstall, NMaps_SendLetter_81_FF.png  , NMaps_SendLetter_81_FF.png
-FileInstall, NMaps_SendLetter_81_IE.png  , NMaps_SendLetter_81_IE.png
-FileInstall, NMaps_SendLetter_81_YA.png  , NMaps_SendLetter_81_YA.png
 FileInstall, NMaps_SendLetter_Moder.png  , NMaps_SendLetter_Moder.png
+FileInstall, NMaps_SendLetter_81_YA.png  , NMaps_SendLetter_81_YA.png
+FileInstall, NMaps_SendLetter_81_IE.png  , NMaps_SendLetter_81_IE.png
+FileInstall, NMaps_SendLetter_81_FF.png  , NMaps_SendLetter_81_FF.png
 
 
 
@@ -301,32 +297,12 @@ ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPan
 
 if ErrorLevel = 1
 {
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_YA.png
+  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_Link_A.png
 }
 
 if ErrorLevel = 1
 {
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_IE.png
-}
-
-if ErrorLevel = 1
-{
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_FF.png
-}
-
-if ErrorLevel = 1
-{
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_YA2.png
-}
-
-if ErrorLevel = 1
-{
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_IE2.png
-}
-
-if ErrorLevel = 1
-{
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_81_FF2.png
+  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 140, WinH, *150 NMaps_GoToHistory_Link_B.png
 }
 
 if ErrorLevel = 1
@@ -475,7 +451,7 @@ ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPan
 
 if ErrorLevel = 1
 {
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 250, WinH, *150 NMaps_SendLetter_81_YB.png
+  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 250, WinH, *150 NMaps_SendLetter_81_YA.png
 }
 
 if ErrorLevel = 1
@@ -839,12 +815,17 @@ BlockInput, MouseMove
 sleep 50
 MouseGetPos, x1, y1
 
-ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Slices_Btn.png
+ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Slices_Btn_A.png
+
+if ErrorLevel = 1
+{
+ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Slices_Btn_B.png
+}
 
 if ErrorLevel = 0
 {
-  x2 := x2 + 20
-  y2 := y2 + 65
+  x2 := x2 + 15
+  y2 := y2 + 60
   MouseClick, Left, %x2%, %y2%, 1, 0
 }
 
@@ -869,11 +850,11 @@ y2 := 0
 BlockInput, MouseMove
 MouseGetPos, x1, y1
 
-ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_A.png
+ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_Btn_A.png
 
 if ErrorLevel = 1
 {
-  ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_B.png
+  ImageSearch x2, y2, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_Btn_B.png
 }
 
 if ErrorLevel = 0
@@ -1033,7 +1014,7 @@ sleep, 50
 
 xr := 0
 yr := 0
-ImageSearch xr, yr, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_A.png
+ImageSearch xr, yr, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_Btn_A.png
 
 if ErrorLevel = 0
 {
@@ -1043,7 +1024,7 @@ if ErrorLevel = 0
 }
 else
 {
-  ImageSearch xr, yr, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_B.png
+  ImageSearch xr, yr, LeftPanelWidth - 60, winH - BottomPanelHeight - 100, LeftPanelWidth, winH - BottomPanelHeight + 60, *50 NMaps_Ruler_Btn_B.png
 }
 
 if ErrorLevel = 0
