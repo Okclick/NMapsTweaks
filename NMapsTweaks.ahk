@@ -229,11 +229,11 @@ MouseGetPos, x0, y0
 x1 := 0
 y1 := 0
 
-ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 40, WinH, *15 NMaps_ListLine_Bottom1.png
+ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 40, WinH, *5 NMaps_ListLine_Bottom1.png
 
 if ErrorLevel = 1
 {
-  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 40, WinH, *15 NMaps_ListLine_Bottom2.png
+  ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 40, WinH, *5 NMaps_ListLine_Bottom2.png
 }
 
 if ErrorLevel = 1
@@ -247,7 +247,7 @@ if ErrorLevel = 1
   exit
 }
 
-y1 := y1 + 6
+y1 := y1 + 10
 
 MouseClick, Left, %x1%, %y1%, 1, 0
 
