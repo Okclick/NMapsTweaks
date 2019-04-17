@@ -327,6 +327,7 @@ exit
 
 
 ; Принять правку
+Insert:: ; Insert
 !sc14D:: ; Alt+Right
 #sc14D:: ; Win+Right
 !sc04D:: ; Alt+Num6
@@ -389,6 +390,40 @@ y2 := y1 + 10
 MouseClick, Left, %x2%, %y2%, 1, 0
 
 MouseMove x0, y0, 0
+
+exit
+
+
+
+
+
+
+
+
+
+
+; Откатить правку
+Home::
+
+WinGetPos, winX, winY, winW, winH
+MouseGetPos, x0, y0
+
+x1 := 0
+y1 := 0
+
+ImageSearch x1, y1, winW - RightPanelWidth - 10, TopPanelHeight, winW - RightPanelWidth + 60, WinH, *50 NMaps_SendLetter_Moder.png
+
+if ErrorLevel = 1
+{
+  exit
+}
+
+x2 := x1 + 235
+y2 := y1 + 10
+
+MouseClick, Left, %x2%, %y2%, 1, 0
+
+MouseMove x2-40, y2+40, 0
 
 exit
 
