@@ -48,7 +48,7 @@ IniRead, DrawDelay     , NMapsTweaks.ini, Other, DrawDelay     , 50
 
 
 
-#IfWinActive Народная карта — редактор Яндекс.Карт
+#IfWinActive Народная карта — редактор Яндекс Карт
 
 
 
