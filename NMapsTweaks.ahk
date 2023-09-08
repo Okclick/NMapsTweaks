@@ -47,7 +47,7 @@ IniRead, AlterZeroSlash, NMapsTweaks.ini, Other, AlterZeroSlash, 0
 IniRead, DrawDelay     , NMapsTweaks.ini, Other, DrawDelay     , 50
 
 
-
+SetTitleMatchMode, 2
 #IfWinActive Народная карта — редактор Яндекс Карт
 
 
